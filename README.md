@@ -71,7 +71,7 @@ cargo test
 ### CI & releases
 
 GitHub Actions (`.github/workflows/ci.yml`) checks formatting and Clippy, runs the tests and
-builds the app on Windows, Linux and macOS for every push and pull request. The packaged builds
+builds the app on Windows, Linux and macOS for every push (all branches) and pull request. The packaged builds
 (`.exe`, `.tar.gz`, macOS universal `.app` as `.zip`) are attached to each run as artifacts.
 Pushing a tag like `v1.0.0` creates a GitHub release with these files.
 
