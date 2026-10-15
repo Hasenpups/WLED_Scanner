@@ -1,0 +1,21 @@
+[package]
+name = "wled-scanner"
+version = "0.1.0"
+edition = "2024"
+description = "Cross-platform WLED device scanner"
+
+[dependencies]
+eframe = { version = "0.36.2", default-features = false, features = ["accesskit", "default_fonts", "glow", "wayland", "x11"] }
+egui_extras = "0.36.2"
+open = "5.4.4"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+socket2 = { version = "0.6.5", features = ["all"] }
+ureq = { version = "3.4.2", default-features = false }
+
+[profile.release]
+strip = true
+lto = true
+
+[build-dependencies]
+winresource = "0.1.34"

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=WLED Scanner
+Comment=Find WLED devices on the local network
+Exec=wled-scanner
+Icon=wled-scanner
+Terminal=false
+Categories=Network;
+StartupWMClass=wled-scanner
